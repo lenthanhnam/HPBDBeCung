@@ -120,6 +120,21 @@
         .type-wrap {
             margin-bottom: 5px; /* Đảm bảo khoảng cách giữa văn bản và ảnh */
         }
+        .loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .loader button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
     </style>
 </head>
 <body>
@@ -133,7 +148,7 @@
     <audio class="song" controls loop>
         <source src="music.mp3">
         </source>
-        <!-- Your browser isn't invited for super fun audio time. -->
+        
     </audio>
     <canvas id="confetti"></canvas>
     <div class="main">
